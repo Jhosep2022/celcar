@@ -1,3 +1,5 @@
+import 'package:celcar/presentation/screens/profile_screen.dart';
+import 'package:celcar/presentation/screens/user_form_screen.dart';
 import 'package:flutter/material.dart';
 
 class PasswordScreen extends StatefulWidget {
@@ -50,7 +52,10 @@ class _PasswordScreenState extends State<PasswordScreen> {
               // Botón "Siguiente"
               ElevatedButton(
                 onPressed: () {
-                  // Acción cuando se presiona el botón
+                  Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => UserFormScreen()),
+                  );
                 },
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.blue, // Color de fondo
